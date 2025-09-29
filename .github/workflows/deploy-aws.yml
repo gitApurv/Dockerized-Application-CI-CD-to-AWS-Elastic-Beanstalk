@@ -21,7 +21,7 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: AWS-BeanStalk-Pipeline
           environment_name: AWS-BeanStalk-Pipeline-env
-          version_label: "${{ github.sha }}-$(date +%Y%m%d%H%M%S)"
+          version_label: ${{ github.sha }}-${{ github.run_number }}
           existing_bucket_name: elasticbeanstalk-ap-south-1-729468324884
           region: ap-south-1
           deployment_package: deploy.zip
