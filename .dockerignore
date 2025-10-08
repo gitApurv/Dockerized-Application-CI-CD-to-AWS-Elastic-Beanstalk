@@ -1,3 +1,22 @@
+# Ignore version control
 .git
+.gitignore
+
+# Dependencies
 node_modules
-.env
+
+# Environment / secrets
+.env*
+
+# Docker build files
+.dockerignore
+Dockerfile
+
+# Logs and temp files
+npm-debug.log
+yarn-error.log
+*.log
+
+# OS and editor files
+.DS_Store
+*.swp
